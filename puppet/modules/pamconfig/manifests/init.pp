@@ -38,6 +38,16 @@
 class pamconfig (
 
 $difok           = $pamconfig::params::difok
+$minlen          = $pamconfig::params::minlen
+$dcredit         = $pamconfig::params::dcredit
+$ucredit         = $pamconfig::params::ucredit
+$lcredit         = $pamconfig::params::lcredit
+$ocredit         = $pamconfig::params::ocredit
+$minclass        = $pamconfig::params::minclass
+$maxrepeat       = $pamconfig::params::maxrepeat
+$maxclassrepeat  = $pamconfig::params::maxclassrepeat
+$gecoscheck      = $pamconfig::params::gecoscheck
+$dictpath        = $pamconfig::params::dictpath
 
 ) inherits pamconfig::params {
 
