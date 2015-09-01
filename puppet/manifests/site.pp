@@ -1,3 +1,3 @@
-node 'test03.familyguy.local' {
-  include reposync_repo
+node 'test02.familyguy.local' {
+  include profile::pam_role
 }

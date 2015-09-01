@@ -1,9 +1,10 @@
 domain = 'familyguy.local'
 VAGRANTFILE_API_VERSION = "2"
 #VAGRANT_BOX_URL = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130731.box"
-#VAGRANT_BOX_URL = "http://puppet-vagrant-boxes.puppetlabs.com/centos-65-x64-virtualbox-puppet.box"
-VAGRANT_BOX_URL = "https://atlas.hashicorp.com/jkyle/boxes/centos-7.0-x86_64"
-VAGRANT_TMP_NAME = "centos7_min"
+VAGRANT_BOX_URL = "http://puppet-vagrant-boxes.puppetlabs.com/centos-65-x64-virtualbox-puppet.box"
+#VAGRANT_BOX_URL = "https://atlas.hashicorp.com/jkyle/boxes/centos-7.0-x86_64"
+#VAGRANT_TMP_NAME = "centos7_min"
+VAGRANT_TMP_NAME = "centos6_min"
 VBGUI = false
 
 nodes = [

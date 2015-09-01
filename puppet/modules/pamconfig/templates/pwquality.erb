@@ -1,0 +1,83 @@
+# Configuration for systemwide password quality limits
+# Defaults:
+#
+# Number of characters in the new password that must not be present in the
+# old password.
+# difok = 5
+#
+# Minimum acceptable size for the new password (plus one if
+# credits are not disabled which is the default). (See pam_cracklib manual.)
+# Cannot be set to lower value than 6.
+# minlen = 9
+#
+# The maximum credit for having digits in the new password. If less than 0
+# it is the minimum number of digits in the new password.
+# dcredit = 1
+#
+# The maximum credit for having uppercase characters in the new password.
+# If less than 0 it is the minimum number of uppercase characters in the new
+# password.
+# ucredit = 1
+#
+# The maximum credit for having lowercase characters in the new password.
+# If less than 0 it is the minimum number of lowercase characters in the new
+# password.
+# lcredit = 1
+#
+# The maximum credit for having other characters in the new password.
+# If less than 0 it is the minimum number of other characters in the new
+# password.
+# ocredit = 1
+#
+# The minimum number of required classes of characters for the new
+# password (digits, uppercase, lowercase, others).
+# minclass = 0
+#
+# The maximum number of allowed consecutive same characters in the new password.
+# The check is disabled if the value is 0.
+# maxrepeat = 0
+#
+# The maximum number of allowed consecutive characters of the same class in the
+# new password.
+# The check is disabled if the value is 0.
+# maxclassrepeat = 0
+#
+# Whether to check for the words from the passwd entry GECOS string of the user.
+# The check is enabled if the value is not 0.
+# gecoscheck = 0
+#
+# Path to the cracklib dictionaries. Default is to use the cracklib default.
+# dictpath =
+<% if @difok.to_i.is_a? Numeric and @difok != '' %>
+difok = <%= @difok %>
+<% end -%>
+<% if @minlen.to_i.is_a? Numeric and @minlen != '' %>
+minlen = <%= @minlen %>
+<% end -%>
+<% if @dcredit.to_i.is_a? Numeric and @dcredit != '' %>
+dcredit = <%= @dcredit %>
+<% end -%>
+<% if @ucredit.to_i.is_a? Numeric and @ucredit != '' %>
+ucredit = <%= @ucredit %>
+<% end -%>
+<% if @lcredit.to_i.is_a? Numeric and @lcredit != '' %>
+lcredit = <%= @lcredit %>
+<% end -%>
+<% if @ocredit.to_i.is_a? Numeric and @ocredit != '' %>
+ocredit = <%= @ocredit %>
+<% end -%>
+<% if @minclass.to_i.is_a? Numeric and @minclass != '' %>
+minclass = <%= @minclass %>
+<% end -%>
+<% if @maxrepeat.to_i.is_a? Numeric and @maxrepeat != '' %>
+maxrepeat = <%= @maxrepeat %>
+<% end -%>
+<% if @maxclassrepeat.to_i.is_a? Numeric and @maxclassrepeat != '' %>
+maxclassrepeat = <%= @maxclassrepeat %>
+<% end -%>
+<% if @gecoscheck.to_i.is_a? Numeric and @gecoscheck != '' %>
+gecoscheck = <%= @gecoscheck %>
+<% end -%>
+<% if @dictpath.to_s and @dictpath != '' %>
+dictpath = <%= @dictpath %>
+<% end -%>
